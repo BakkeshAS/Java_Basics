@@ -1,0 +1,12 @@
+public class Program
+{
+	public static void main(String[] args) {
+	    String value = "1234.5678";
+	    System.out.println("Value is " + " " +value);
+	    String value1 = value.split("\\.")[1];
+	    System.out.println("Value after decimal point is" +" "+ value1);
+	    String value2 = value.split("\\.")[0];
+	    System.out.println("Value before decimal point is" +" "+ value2);
+		
+	}
+}
