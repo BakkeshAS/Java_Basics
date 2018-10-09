@@ -1,9 +1,24 @@
 public class Program
 {
 	public static void main(String[] args) {
-	    String value = "1234.5678";
+	
+	// java is case sensitive by this I mean string is not same as String.
+	// Declaring and initializing a String variable is shown below.
+	
+	    String value = "1234.5678"; 
+	    
+	//"System" is a class in the java.lang package. 
+	//"out" is a static member of the System class, and is an instance of java.io.PrintStream. 
+	//"println" is a method of java.io.PrintStream. 
+	//This method is overloaded to print message to output destination.
+	
 	    System.out.println("Value is " + " " +value);
+	    
+	//[1] in the code below say take the second half, if its[0] then take the first half. 
+	// consider there are three parts, and you want third part then use [2]. (array like convention)
+	
 	    String value1 = value.split("\\.")[1];
+	    
 	    System.out.println("Value after decimal point is" +" "+ value1);
 	    String value2 = value.split("\\.")[0];
 	    System.out.println("Value before decimal point is" +" "+ value2);
